@@ -6,10 +6,12 @@
     	<div>
             <h1><a href="">Habosvilla Blog</a></h1>
         </div>
-        <div>
-            <p>published: 2015.05.16.</p>
-            <h2><a href="">Django Girls workshop</a></h2>
-            <p>Eljutottam életem első Django Girls workshopjára, ahol kipróbálhattam, hogyan készíthetek egy blogot magamnak. </p>
-        </div>
+		{% for post in posts %}
+	        <div>
+	            <p>published: 2015.05.16.</p>
+	            <h2><a href="">Django Girls workshop</a></h2>
+	            <p>Eljutottam életem első Django Girls workshopjára, ahol kipróbálhattam, hogyan készíthetek egy blogot magamnak. </p>
+	        </div>
+        {% endfor %}
     </body>
 </html>
